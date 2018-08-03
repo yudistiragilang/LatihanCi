@@ -6,6 +6,8 @@ class Belajar extends CI_Controller{
 
     function __construct(){
         parent::__construct();
+        // mengeload model m_data
+        $this->load->model('m_data');
     }
 
     public function index(){
@@ -29,5 +31,12 @@ class Belajar extends CI_Controller{
             'tutorial' => "pasing data"
         );
         $this->load->view('view_belajar',$datas);
+    }
+
+    function user(){
+        // $data['parameter'] = $this->nama model->fungsi model->mau diapakan (result berfungsi menjadikan array)
+        $data['user'] = $this->m_data->ambil_data()->result();
+        // menampilkan data
+        $this->load->view('v_user',$data);
     }
 }
