@@ -11,11 +11,13 @@
 </head>
 <body>
     <h1>Membuat Form Validasi dengan CodeIgniter</h1>
+    <!-- menampilkan error validasi keseluruhan -->
     <?php echo validation_errors(); ?>
     <!-- form_open(nama class/nama method pada controler) -->
     <?php echo form_open('form/aksi'); ?>
         <label for="">Nama</label><br>
         <input type="text" name="nama"><br>
+        <?php echo form_error('nama'); ?> <!-- digunakan untuk manual eror.. hanya untuk nama -->
         <label for="">Email</label><br>
         <input type="text" name="email"><br>
         <label for="">Konfirmasi Email</label><br>
