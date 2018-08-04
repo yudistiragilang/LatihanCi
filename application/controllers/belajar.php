@@ -33,6 +33,7 @@ class Belajar extends CI_Controller{
         $this->load->view('view_belajar',$datas);
     }
 
+    // select data dari database
     function user(){
         // $data['parameter'] = $this->nama model->fungsi model->mau diapakan (result berfungsi menjadikan array)
         $data['user'] = $this->m_data->ambil_data()->result();

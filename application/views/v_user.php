@@ -21,6 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <th>Alamat</th>
             <th>Pekerjaan</th>
         </tr>
+        
         <?php foreach($user as $u){ ?>
         <tr>
             <!-- $u adalah variabel foreach -> nama field dalam tabel -->

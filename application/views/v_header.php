@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>View Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- memanggil css dari asset -->
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo base_url() ?>assets/css/style.css" />
     <script src="main.js"></script>
 </head>
