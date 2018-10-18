@@ -15,10 +15,6 @@ class Belajar extends CI_Controller{
     }
 
     public function halo(){
-        // $this->load->view('File yang dipanggil');
-        // $this->load->view('view_belajar');
-
-        // $this->load->view('Folder/File yang dipanggil');
 
         //menggunakan array
         // $data['nama_web'] = "MalasNgoding.com Halo Halo Solo";
